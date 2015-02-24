@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require d3
 //= require_tree .
+function copySection() {
+  var section = document.getElementById("copy_section");
+  var copy = section.lastElementChild.cloneNode(true);
+  section.appendChild(copy);
+}
+
+function disableButton() {
+    var button = document.getElementById("upd-btn");
+    setTimeout(function() {button.disabled = true}, 1);
+}
